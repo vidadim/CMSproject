@@ -1,0 +1,84 @@
+*,ul,li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+body{
+	background-color:#f1f1f1;
+	font-family: Open Sans,Arial,Helvetica,sans-serif;
+}
+
+/* Common classes */
+
+/* bu klass verildiyi elementin altklaslarinda col-ile bashlayanlarin paddingin sifirlayir */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+/* Common classes */
+
+/* left navigation panel { */
+/* Don't change anything */
+#navPanel{
+	width:220px;
+	height:800px;
+	background-color:#2d2d2d;
+	font-size:15px;
+}
+.s-nav{
+	width:220px;
+	line-height:21px;
+}
+.profile {
+	background-color:#202020;
+	width:100%;
+}
+
+.profile ul li{
+	padding: 0px 0px;
+}
+.s-nav a{
+	text-decoration: none;
+	color:#FFF;
+	display:inline;
+
+}
+.s-nav li:not(.profile){
+	font-size:14px;
+	padding:10px;
+	clear:both;
+	border-bottom:1px solid #3b3b3b;
+	cursor:pointer;
+}
+li ul li {
+	border: none;
+}
+.fa-plus-circle {
+	float:right;
+}
+.profile a{
+	display:block;
+}
+.s-nav .fa{
+	margin: 1px 8px 0 0;
+	font-size:20px;
+}
+.label{
+	padding:5px 2px;
+	font-size:12px;
+	font-weight:normal;
+}
+.sub-li  .fa{
+	font-size:16px;	
+}
+
+ul li ul li{
+	border:none !important;
+	padding:10px 0px 10px 25px!important;
+
+}
+
+/* Left nav panel } */
