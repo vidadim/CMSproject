@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
- <meta charset="UTF-8"> 
-<head>
-    <title>Navigation panel</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="  crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
 
-<body>
-    <div class="main no-gutter">
         <div class="col-md-2 col-sm-2" id="navPanel">
             <ul class="s-nav">
                 <li class="profile">
@@ -27,7 +15,7 @@
                     <a href="http://acms.mile-lazar.com/admin/blocks">
                         <i class="fa fa-cube"></i>Blocks
                     </a>
-                    <a href="http://acms.mile-lazar.com/admin/blocks/create" class="add">
+                    <a href="blocks/create.php" class="add">
                         <i class="fa fa-plus-circle"></i>
                     </a>
                 </li>
@@ -79,35 +67,7 @@
 					</ul>
                 </li>
             </ul>
+        </div>      
+        
 
-        </div>
-        <div class="col-md-12 col-sm-12" id=""></div>
-    </div>
-
-    </div>
-</body>
     
-</html>
-
-<script type="text/javascript">
-  var  listItem= $('li:not(.sub-li,.profile ul li,.profile)');
-  listItem.hover(
-    function(){
-        $(this).css("background-color","#3d3d3d");
-    },
-    function(){
-        $(this).css("background-color","#2d2d2d");
-    }
-  );
-
-  var subListItem = $('.sub-li');
-   subListItem.hover(
-    function(){
-        $(this).css("color","darkgray");
-    },
-    function(){
-        $(this).css("color","#FFF");
-    }
-  );
-
-</script>

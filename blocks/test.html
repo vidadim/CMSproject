@@ -1,0 +1,29 @@
+<div class="container fixed">
+    <div class="sidebar-content">
+        <p class="field-lang">
+            <label for="lang">Dil</label>
+            <select id="lang" name="lang" style="display: none;">
+                <option value="en">English (en)</option>
+                <option selected="selected" value="de">Deutsch (de)</option>
+            </select>
+            <div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 240px;" title="" id="lang_chosen"><a class="chosen-single" tabindex="-1"><span>Deutsch (de)</span><div><b></b></div></a>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off" readonly="">
+                    </div>
+                    <ul class="chosen-results"></ul>
+                </div>
+            </div>
+        </p>
+        <!-- Only Super Admin can enable or disable editor -->
+        <p class="field-toggle-editor">
+            <input type="checkbox" name="use_editor" id="use_editor" value="1">
+            <label for="use_editor">Toggle visual editor</label>
+        </p>
+    </div>
+    <div class="buttons">
+        <button name="save" value="save" type="submit" class="button2"><i class="fa fa-floppy-o"></i>&nbsp; Сохранить</button>
+        <button name="save" value="save_edit" type="submit">Save and continue editing</button>
+        <button name="save" value="save_new" type="submit">Save and add new</button>
+    </div>
+</div>
