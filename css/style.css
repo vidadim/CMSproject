@@ -23,6 +23,8 @@ body {
 
 
 /* bu klass verildiyi elementin altklaslarinda col-ile bashlayanlarin paddingin sifirlayir */
+
+
 /* Burda bir defe istifade olunub mainde */
 
 .no-gutter > [class*='col-'] {
@@ -30,14 +32,16 @@ body {
     padding-left: 0;
 }
 
-.padding-left{
-    padding-left:15px;
+.padding-left {
+    padding-left: 15px;
 }
+
 
 /* Common classes */
 
 
 /* left navigation panel { */
+
 
 /* Don't change anything */
 
@@ -117,8 +121,8 @@ ul li ul li {
 
 .rightSection {
     position: relative;
-    left: 220px;
-    width:85%;
+    /* left: 220px; Bunu javascript-de dinamic olaraq padding-left vererek evez etdik */
+    width: 100%;
 }
 
 
@@ -190,11 +194,13 @@ ul li ul li {
 }
 
 .table .icons {
-    width:100px;
+    width: 100px;
 }
+
 .table .lang {
-    width:200px;
+    width: 200px;
 }
+
 .search-form {
     line-height: 38px;
 }
@@ -219,6 +225,7 @@ ul li ul li {
 
 .buttons {}
 
+
 /* customizing bootstrap button width */
 
 .s-btn {
@@ -228,6 +235,17 @@ ul li ul li {
 
 
 /* Blocks */
+
+
+/* Blocks Create/Add */
+    form .checkbox {
+        width:30px;
+        cursor:pointer;
+        display:inline;
+        border:none;
+    }
+
+/* Blocks Create/Add */
 
 
 /* rightSection  }*/

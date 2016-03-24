@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
@@ -34,26 +33,5 @@
         </div>
     </div>
 </body>
-
 </html>
-<script type="text/javascript">
-var listItem = $('li:not(.sub-li,.profile ul li,.profile)');
-    listItem.hover(
-        function() {
-            $(this).css("background-color", "#3d3d3d");
-        },
-        function() {
-            $(this).css("background-color", "#2d2d2d");
-        }
-);
-
-var subListItem = $('.sub-li');
-    subListItem.hover(
-        function() {
-            $(this).css("color", "darkgray");
-        },
-        function() {
-            $(this).css("color", "#FFF");
-        }
-);
-</script>
+<script type="text/javascript" src="script/script.js"></script>

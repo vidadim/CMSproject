@@ -8,77 +8,58 @@
     <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
  	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- CKeditor -->
+ 	<script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
  </head>
+
  <body>
-
-
  	<div class="main no-gutter">
-  	<?php 
-    	include '../nav_panel.php';
- 	?>
-    <div class="rightSection col-md-10"> 	
-	    <div class="s-panel">
-		    <h3><i class="fa fa-cube"></i> Add/edit block </h3> 
-	    </div>
-	    <div class="col-md-9 col-sm-9">
-			    
-			<form>
-			  <div class="form-group">			    
-			    <input type="text"  class="form-control" id="exampleInputEmail1" placeholder="Title">
-			  </div>
-			  <div class="form-group">
-			    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Category">
-			  </div>
-			
-				<textarea class="form-control" rows="10" name="content"></textarea>
-			        <script src="http://acms.mile-lazar.com/admin_assets/ckeditor/ckeditor.js?t=1603231458759202"></script>
-			        <script>
-			        var cfg = {
-			            "filebrowserBrowseUrl": "http://acms.mile-lazar.com/admin_assets/kcfinder/browse.php",
-			            "filebrowserUploadUrl": "http://acms.mile-lazar.com/admin_assets/kcfinder/browse.php",
-			            "toolbar": [
-			                ["Source", "-", "Bold", "Italic", "Underline", "Strike", "Subscript", "Superscript", "RemoveFormat", "-", "Cut", "Copy", "Paste", "PasteText", "PasteFromWord", "-", "Undo", "Redo"],
-			                ["JustifyLeft", "JustifyCenter", "JustifyRight", "JustifyBlock", "NumberedList", "BulletedList", "-", "Blockquote"],
-			                ["Flash", "Image", "Link", "Unlink", "Anchor", "Table", "HorizontalRule", "SpecialChar", "-", "Styles", "Format"]
-			            ],
-			            "language": "en",
-			            "defaultLanguage": "en",
-			            "stylesSet": "my_styles:http://acms.mile-lazar.com/js/ckeditor-styles.js",
-			            "contentsCss": "http://acms.mile-lazar.com/css/editor.css"
-			        }
-			        </script>
-			      <button type="submit" class="btn btn-default">Submit</button>
-			</form>
-			</div>	    	
-	    <div class="col-md-3 col-sm-3">
-	    	<div class="container fixed">
-			    <div class="sidebar-content">
-			        <p class="field-lang">
-			            <label for="lang">Dil</label>
-			            <select id="lang" name="lang" style="display: none;">
-			                <option value="en">English (en)</option>
-			                <option selected="selected" value="de">Deutsch (de)</option>
-			            </select>
-			            <div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 240px;" title="" id="lang_chosen"><a class="chosen-single" tabindex="-1"><span>Deutsch (de)</span><div><b></b></div></a>
-			                <div class="chosen-drop">
-			                    <div class="chosen-search">
-			                        <input type="text" autocomplete="off" readonly="">
-			                    </div>
-			                    <ul class="chosen-results"></ul>
-			                </div>
-			            </div>
-			        </p>
-			        <!-- Only Super Admin can enable or disable editor -->
-			        <p class="field-toggle-editor">
-			            <input type="checkbox" name="use_editor" id="use_editor" value="1">
-			            <label for="use_editor">Toggle visual editor</label>
-			        </p>
-			    </div>
-			    <div class="buttons">
-			        <button name="save" value="save" type="submit" class="button2"><i class="fa fa-floppy-o"></i>&nbsp; Сохранить</button>
-			        <button name="save" value="save_edit" type="submit">Save and continue editing</button>
-			        <button name="save" value="save_new" type="submit">Save and add new</button>
-			    </div>
-			</div>
-	    </div>
+	  	<?php 
+	    	include '../nav_panel.php';
+	 	?>
+	    <div class="rightSection col-md-10" id="main"> 	
+		    <div class="s-panel">
+			    <h3><i class="fa fa-cube"></i> Add/edit block </h3> 
+		    </div>
+		    <div class="col-md-9 col-sm-9">
+				    
+				<form>
+				  <div class="form-group">			    
+				    <input type="text"  class="form-control" id="exampleInputEmail1" placeholder="Title">
+				  </div>
+				  <div class="form-group">
+				    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Category">
+				  </div>
+				
+					<textarea class="form-control" id="editor" rows="10" name="content"></textarea>
+				        
+				</form>
+				</div>	    	
+		    <div class="col-md-3 col-sm-3">
+		    	<form action="" name="filter_form" class="search-form" method="get" accept-charset="utf-8">
+				    <div class="sidebar-content">				                
+				        <p class="field-lang">
+				           	<div class="dropdown ">
+							 <button class="s-btn color btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Language
+							  <span class="caret"></span></button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">English (en) </a></li>
+							    <li><a href="#">Deustch (de) </a></li>								   
+							  </ul>
+							</div>													                    
+						</p>
+							<label class="checkbox-inline"><input class="checkbox" id="toggleeditor" type="checkbox" value="">Toggle visual editor</label>
+						<div class="buttons">
+		                    <button type="submit" class="btn btn-success s-btn">Save</button>
+		                    <button type="button" class="btn btn-primary s-btn">Save and continue editing</button>
+		                    <button type="button" class="btn btn-primary s-btn">Save and add new</button>
+		                </div>
+				    </div>				               
+				</form>
+		    </div>
+		</div>
+
 	</div>
+</body>
+</html>
+<script type="text/javascript" src="../script/script.js"></script>
