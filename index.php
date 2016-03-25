@@ -8,6 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/output.css"> -->
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                     <a href="publish.php" class="dashboard-button"><i class="fa fa-bullhorn"></i>Publish</a>
                     <a href="users.php" class="dashboard-button"><i class="fa fa-users"></i>Users</a>
                     <a href="settings.php" class="dashboard-button"><i class="fa fa-gears"></i>Settings</a>
-                    <a href="http://acms.mile-lazar.com/admin/users/profile" class="dashboard-button"><i class="fa fa-user"></i>Edit profile</a>
+                    <a href="profile.php" class="dashboard-button"><i class="fa fa-user"></i>Edit profile</a>
                 </div>
             </div>
         </div>

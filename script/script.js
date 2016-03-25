@@ -11,15 +11,15 @@ $(document).ready(function() {
         }
     );
 
-    var subListItem = $('.sub-li');
-    subListItem.hover(
-        function() {
-            $(this).css("color", "darkgray");
-        },
-        function() {
-            $(this).css("color", "#FFF");
-        }
-    );
+    // var subListItem = $('.sub-li');
+    // subListItem.hover(
+    //     function() {
+    //         $(this).css("color", "darkgray");
+    //     },
+    //     function() {
+    //         $(this).css("color", "#FFF");
+    //     }
+    // );
 
 
 
@@ -32,9 +32,18 @@ $(document).ready(function() {
 
     /* for toggling between textarea and CKeditor / not completed */
     $("#toggleeditor").change(function() {
+
         if ($(this).is(":checked")) {
             CKEDITOR.replace('editor');
-            alert("true");
+        } else {
+            CKEDITOR.instances.editor.destroy();
         }
+    });
+
+
+    /* Make table rows draggable */
+    $(function() {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
     });
 });

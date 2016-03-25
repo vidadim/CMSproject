@@ -2,14 +2,14 @@
  <!DOCTYPE html>
  <html>
  <head>
-  <title>CMS Project - Blocks</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>CMS Project - Blocks</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="../css/style.css">
-  <!-- CKeditor -->
-  <script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- CKeditor -->
+    <script src="//cdn.ckeditor.com/4.5.7/standard/ckeditor.js"></script>
  </head>
 
  <body>
@@ -50,10 +50,10 @@
             </p>
               <label class="checkbox-inline"><input class="checkbox" id="toggleeditor" type="checkbox" value="">Toggle visual editor</label>
             <div class="buttons">
-                        <button type="submit" class="btn btn-success s-btn">Save</button>
-                        <button type="button" class="btn btn-primary s-btn">Save and continue editing</button>
-                        <button type="button" class="btn btn-primary s-btn">Save and add new</button>
-                    </div>
+                <button type="submit" class="btn btn-success s-btn">Save</button>
+                <button type="button" class="btn btn-primary s-btn">Save and continue editing</button>
+                <button type="button" class="btn btn-primary s-btn">Save and add new</button>
+            </div>
             </div>                       
         </form>
         </div>
