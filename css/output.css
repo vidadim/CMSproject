@@ -1,53 +1,30 @@
-body {
-  font: 100% Open Sans, Arial, Helvetica, sans-serif;
-  background-color: #f1f1f1; }
+.test .flex {
+    display: flex;
+}
 
-#navPanel {
-  width: 220px;
-  height: 800px;
-  background-color: #2d2d2d;
-  font-size: 15px;
-  position: fixed;
-  z-index: 1; }
-  #navPanel .s-nav {
-    width: 220px;
-    line-height: 21px; }
-    #navPanel .s-nav a {
-      text-decoration: none;
-      color: #FFF;
-      display: inline; }
-    #navPanel .s-nav a {
-      display: block; }
-    #navPanel .s-nav .fa {
-      margin: 1px 8px 0 0;
-      font-size: 20px; }
-  #navPanel .profile {
-    background-color: #202020;
-    width: 100%; }
-    #navPanel .profile ul li {
-      padding: 0px 0px; }
-  #navPanel a {
-    text-decoration: none;
-    color: #FFF;
-    display: inline; }
-  #navPanel .s-nav li:not(.profile) {
-    font-size: 14px;
+.test .flex h3 {
+    margin: 0;
     padding: 10px;
-    clear: both;
-    border-bottom: 1px solid #3b3b3b;
-    cursor: pointer; }
-  #navPanel li ul li {
-    border: none; }
-  #navPanel .fa-plus-circle {
-    float: right; }
-  #navPanel .label {
-    padding: 5px 2px;
-    font-size: 12px;
-    font-weight: normal; }
-  #navPanel .sub-li .fa {
-    font-size: 16px; }
-  #navPanel ul li ul li {
-    border: none !important;
-    padding: 10px 0px 10px 25px !important; }
+    background-color: lightsalmon;
+    color: #FFF;
+}
+
+.test .flex h3 i {
+    cursor: pointer;
+}
+
+.test .flex .flexItem {
+    width: 23.7%;
+    padding: 0 15px;
+}
+
+.test .flex .flexItem .effect {
+    display: none;
+}
+
+.test .flex .flexItem a {
+    width: 100%;
+}
+
 
 /*# sourceMappingURL=output.css.map */

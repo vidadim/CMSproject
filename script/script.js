@@ -28,22 +28,41 @@ $(document).ready(function() {
     rightSection.css('padding-left', '220px');
 
 
-
-
     /* for toggling between textarea and CKeditor / not completed */
     $("#toggleeditor").change(function() {
 
         if ($(this).is(":checked")) {
-            CKEDITOR.replace('editor');
+            CKEDITOR.replace('editor-blocks');
         } else {
-            CKEDITOR.instances.editor.destroy();
+            CKEDITOR.instances.editor - blocks.destroy();
         }
     });
 
+    /* editors in pages/create or pages/edit */
+    $(function() {
+        //   CKEDITOR.replace('editor_pages');
+    });
 
-    /* Make table rows draggable */
+    /* Make table rows draggable in menu list*/
     $(function() {
         $("#sortable").sortable();
         $("#sortable").disableSelection();
     });
+
+    /* draggable panel boxes in test */
+    $(function() {
+        $('.flex').sortable();
+        $(".flex").disableSelection();
+    });
+    
+    
+    $('.widgetTitle').on('click', function() {
+        //$('.effect').hide();
+        $(this).next('.effect').slideToggle('slow');
+    });
+
+    $('#expand').on('click', function(){
+        $(this).animate({width:'800px', height: '500px'});
+    });
+
 });

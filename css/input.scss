@@ -1,91 +1,37 @@
-$font-stack:    Open Sans, Arial, Helvetica, sans-serif;
+$font-stack: Open Sans, Arial, Helvetica, sans-serif;
 $bg-color: #f1f1f1;
 $nav-bg-color: #2d2d2d;
 
-body {
-  font: 100% $font-stack;
-  background-color: $bg-color;
-}
 
-#navPanel{
-	width: 220px;
-	    height: 800px;
-	    background-color: $nav-bg-color;
-	    font-size: 15px;
-	    position: fixed;
-	    z-index:1;
+.test{
 
-	.s-nav {
-  	  width: 220px;
-    	line-height: 21px;
-		a {
-		    text-decoration: none;
-		    color: #FFF;
-		    display: inline;
+	.flex {
+		display: flex;
+
+		h3{
+			
+			margin: 0;
+			padding: 10px;
+			background-color:lightsalmon;
+			color: #FFF;
+
+			i{
+				cursor: pointer;
+			}
+
 		}
-	a {
-	    display: block;
+		.flexItem {
+			width: 23.7%;
+			padding: 0 15px;
+			.effect{
+			display: none;
+			
+			}
+
+			a{
+				width: 100%;
+			}
+		}
 	}
-	
-	.fa {
-	    margin: 1px 8px 0 0;
-	    font-size: 20px;
-	}
-
-}
-
-
-.profile {
-    background-color: #202020;
-    width: 100%;
-	ul li {
-    padding: 0px 0px;
-	}
-
-}
-
-
-a {
-    text-decoration: none;
-    color: #FFF;
-    display: inline;
-}
-
-.s-nav li:not(.profile) {
-    font-size: 14px;
-    padding: 10px;
-    clear: both;
-    border-bottom: 1px solid #3b3b3b;
-    cursor: pointer;
-}
-
-li ul li {
-    border: none;
-}
-
-.fa-plus-circle {
-    float: right;
-}
-
-
-
-
-
-.label {
-    padding: 5px 2px;
-    font-size: 12px;
-    font-weight: normal;
-}
-
-.sub-li {
-	.fa {
-    font-size: 16px;
-	}
-}
-
-ul li ul li {
-    border: none !important;
-    padding: 10px 0px 10px 25px!important;
-}
 
 }
