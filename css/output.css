@@ -15,15 +15,27 @@
     .test .flex .flexItem a {
       width: 100%; }
 
-.publish table tbody td:nth-child(5), .publish table tbody td:nth-child(6), .publish table tbody td:nth-child(7) {
+.categories form {
+  margin-bottom: 15px; }
+.categories table {
+  background-color: #FFF; }
+  .categories table input {
+    padding-left: 20px;
+    width: 100%;
+    cursor: text;
+    height: 38px; }
+
+.posts table tbody td:nth-child(5),
+.posts table tbody td:nth-child(6),
+.posts table tbody td:nth-child(7) {
   text-align: center; }
-.publish table tbody td:nth-child(7) {
+.posts table tbody td:nth-child(7) {
   width: 10%; }
-.publish table tbody td {
+.posts table tbody td {
   vertical-align: none; }
-.publish table tbody .red {
+.posts table tbody .red {
   color: red; }
-.publish table tbody .green {
+.posts table tbody .green {
   color: green; }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,60 +1,69 @@
-$font-stack: Open Sans, Arial, Helvetica, sans-serif;
+$font-stack: Open Sans,
+Arial,
+Helvetica,
+sans-serif;
 $bg-color: #f1f1f1;
 $nav-bg-color: #2d2d2d;
-
-
-.test{
-
-	.flex {
-		display: flex;
-
-		h3{
-			
-			margin: 0;
-			padding: 10px;
-			background-color:lightsalmon;
-			color: #FFF;
-
-			i{
-				cursor: pointer;
-			}
-
-		}
-		.flexItem {
-			width: 23.7%;
-			padding: 0 15px;
-			.effect{
-			display: none;
-			
-			}
-
-			a{
-				width: 100%;
-			}
-		}
-	}
-
+.test {
+    .flex {
+        display: flex;
+        h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: lightsalmon;
+            color: #FFF;
+            i {
+                cursor: pointer;
+            }
+        }
+        .flexItem {
+            width: 23.7%;
+            padding: 0 15px;
+            .effect {
+                display: none;
+            }
+            a {
+                width: 100%;
+            }
+        }
+    }
 }
 
-.publish{
-	table{
-		tbody{
-			td:nth-child(5),td:nth-child(6),td:nth-child(7){
-				text-align: center;
-			}
-			td:nth-child(7){
-				width: 10%;
-			}
-			td{
-				vertical-align: none;
-			}
-			
-			.red{
-				color:red;
-			}
-			.green{
-				color:green;
-			}
-		}
-	}
+.categories {
+    form {
+        margin-bottom: 15px;
+    }
+    table {
+        background-color: #FFF;
+        input {
+            padding-left: 20px;
+            width: 100%;
+            cursor: text;
+            height: 38px;
+        }
+    }
+}
+
+.posts {
+    table {
+        tbody {
+            td:nth-child(5),
+            td:nth-child(6),
+            td:nth-child(7) {
+                text-align: center;
+            }
+            td:nth-child(7) {
+                width: 10%;
+            }
+            td {
+                vertical-align: none;
+            }
+            .red {
+                color: red;
+            }
+            .green {
+                color: green;
+            }
+        }
+    }
 }
