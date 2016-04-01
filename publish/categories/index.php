@@ -13,13 +13,13 @@
 
  </head>
  <body>
-  	<div class="main no-gutter posts" >
+  	<div class="main no-gutter categories" >
 	  	<?php
 include '../../nav_panel.php';
 ?>
 	    <div class="rightSection col-md-10" id="main">
 		    <div class="s-panel">
-		    	<h3><i class="fa fa-bullhorn"></i> Posts <span class="total-items">(5)</span></h3>
+		    	<h3><i class="fa fa-bullhorn"></i> Categories <span class="total-items">(5)</span></h3>
 		    </div>
 			<div class="col-md-9 col-sm-9">
 				<table class="table">
@@ -27,10 +27,10 @@ include '../../nav_panel.php';
 				        <tr>
 				            <th></th>						<!-- Image -->
 				            <th>Title</th>					<!-- Title -->
-				            <th>Created</th>				<!-- Creation date -->
-				            <th>Category</th>				<!-- Category -->
-				            <th>Published</th>				<!-- Published or not -->
-				            <th>Featured</th>				<!-- Featured -->
+				            <th>URL</th>					<!-- URL -->
+				            <th>Position</th>				<!-- Position -->
+				            <th>Level</th>					<!-- Level -->
+				            <th>Published</th>				<!-- Publishe -->
 				            <th>Language</th>				<!-- Language -->
 				            <th ></th>						<!-- View/Delete/Edit -->
 				        </tr>
@@ -55,74 +55,7 @@ include '../../nav_panel.php';
 				            </td>
 				        </tr>
 
-				        <tr >
-				            <td class="icons icons-left">
-				               <img src="http://acms.mile-lazar.com/uploads/cms/70_50/70_50_food-1024-768-9.jpg">
-				            </td>
-				            <td><a href="#">Bazinga</a></td>
-				            <td>06.12.2016 14:43:32 </td>
-				            <td>Category</td>
-				            <td><i class="fa fa-check-circle green"></i></td>
-				            <td><i class="fa fa-times-circle red"></i></td>
-				            <td class="lang" >en</td>
-				            <td class="icons">
-				          		 <a href="#"><i class="fa fa-eye"></i></a>
-				                <a href=""><i class="fa fa-pencil-square-o"></i></a>
-				                <a href=""><i class="fa fa-trash-o"></i></a>
-				            </td>
-				        </tr>
 
-
-				        <tr >
-				            <td class="icons icons-left">
-				               <img src="http://acms.mile-lazar.com/uploads/cms/70_50/70_50_food-1024-768-9.jpg">
-				            </td>
-				            <td><a href="#">Bazinga</a></td>
-				            <td>06.12.2016 14:43:32 </td>
-				            <td>Category</td>
-				            <td><i class="fa fa-check-circle green"></i></td>
-				            <td><i class="fa fa-times-circle red"></i></td>
-				            <td class="lang" >en</td>
-				            <td class="icons">
-				          		 <a href="#"><i class="fa fa-eye"></i></a>
-				                <a href=""><i class="fa fa-pencil-square-o"></i></a>
-				                <a href=""><i class="fa fa-trash-o"></i></a>
-				            </td>
-				        </tr>
-
-				        <tr >
-				            <td class="icons icons-left">
-				               <img src="http://acms.mile-lazar.com/uploads/cms/70_50/70_50_food-1024-768-9.jpg">
-				            </td>
-				            <td><a href="#">Bazinga</a></td>
-				            <td>06.12.2016 14:43:32 </td>
-				            <td>Category</td>
-				            <td><i class="fa fa-check-circle green"></i></td>
-				            <td><i class="fa fa-times-circle red"></i></td>
-				            <td class="lang" >en</td>
-				            <td class="icons">
-				          		 <a href="#"><i class="fa fa-eye"></i></a>
-				                <a href=""><i class="fa fa-pencil-square-o"></i></a>
-				                <a href=""><i class="fa fa-trash-o"></i></a>
-				            </td>
-				        </tr>
-
-				        <tr >
-				            <td class="icons icons-left">
-				               <img src="http://acms.mile-lazar.com/uploads/cms/70_50/70_50_food-1024-768-9.jpg">
-				            </td>
-				            <td><a href="#">Bazinga</a></td>
-				            <td>06.12.2016 14:43:32 </td>
-				            <td>Category</td>
-				            <td><i class="fa fa-check-circle green"></i></td>
-				            <td><i class="fa fa-times-circle red"></i></td>
-				            <td class="lang" >en</td>
-				            <td class="icons">
-				          		 <a href="#"><i class="fa fa-eye"></i></a>
-				                <a href=""><i class="fa fa-pencil-square-o"></i></a>
-				                <a href=""><i class="fa fa-trash-o"></i></a>
-				            </td>
-				        </tr>
 
 				    </tbody>
 				</table>
@@ -147,7 +80,7 @@ include '../../nav_panel.php';
 							 <div class="buttons">
 		                    <button type="submit" class="btn btn-success s-btn">Filter</button>
 		                </div>
-		           	p</div>
+		           	</div>
 
 		        </form>
 			</div>
