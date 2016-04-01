@@ -1,30 +1,29 @@
 .test .flex {
-    display: flex;
-}
-
-.test .flex h3 {
+  display: flex; }
+  .test .flex h3 {
     margin: 0;
     padding: 10px;
     background-color: lightsalmon;
-    color: #FFF;
-}
-
-.test .flex h3 i {
-    cursor: pointer;
-}
-
-.test .flex .flexItem {
+    color: #FFF; }
+    .test .flex h3 i {
+      cursor: pointer; }
+  .test .flex .flexItem {
     width: 23.7%;
-    padding: 0 15px;
-}
+    padding: 0 15px; }
+    .test .flex .flexItem .effect {
+      display: none; }
+    .test .flex .flexItem a {
+      width: 100%; }
 
-.test .flex .flexItem .effect {
-    display: none;
-}
-
-.test .flex .flexItem a {
-    width: 100%;
-}
-
+.publish table tbody td:nth-child(5), .publish table tbody td:nth-child(6), .publish table tbody td:nth-child(7) {
+  text-align: center; }
+.publish table tbody td:nth-child(7) {
+  width: 10%; }
+.publish table tbody td {
+  vertical-align: none; }
+.publish table tbody .red {
+  color: red; }
+.publish table tbody .green {
+  color: green; }
 
 /*# sourceMappingURL=output.css.map */

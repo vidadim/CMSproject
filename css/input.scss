@@ -35,3 +35,26 @@ $nav-bg-color: #2d2d2d;
 	}
 
 }
+
+.publish{
+	table{
+		tbody{
+			td:nth-child(5),td:nth-child(6),td:nth-child(7){
+				text-align: center;
+			}
+			td:nth-child(7){
+				width: 10%;
+			}
+			td{
+				vertical-align: none;
+			}
+			
+			.red{
+				color:red;
+			}
+			.green{
+				color:green;
+			}
+		}
+	}
+}
