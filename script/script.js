@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    /* [Navbar] */
     /* hovering over fixed navbar items */
     var listItem = $('li:not(.sub-li,.profile ul li,.profile)');
     listItem.hover(
@@ -22,7 +23,7 @@ $(document).ready(function() {
     // );
 
 
-
+    /* [Index] */
     /* for assigning padding to rightSection in order of intersection with fixed navbar*/
     var rightSection = $('#main');
     rightSection.css('padding-left', '220px');
@@ -38,11 +39,13 @@ $(document).ready(function() {
         }
     });
 
+    /* [Pages] */
     /* editors in pages/create or pages/edit */
     $(function() {
         //   CKEDITOR.replace('editor_pages');
     });
 
+    /* [Menus] */
     /* Make table rows draggable in menu list*/
     $(function() {
         $("#sortable").sortable();
@@ -50,6 +53,7 @@ $(document).ready(function() {
     });
 
     /* draggable panel boxes in test */
+    /* [Test] */
     $(function() {
         $('.flex').sortable();
         $(".flex").disableSelection();
