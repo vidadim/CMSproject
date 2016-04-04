@@ -1,4 +1,4 @@
-// we need some comments i think:)
+<!-- // we need some comments i think:) -->
         <div class="col-md-2 col-sm-2" id="navPanel">
             <ul class="s-nav">
                 <li class="profile">
