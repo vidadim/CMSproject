@@ -111,10 +111,22 @@ li ul li {
 
 ul li ul li {
     border: none !important;
-    padding: 10px 0px 10px 25px!important;
+    /* padding: 10px 0px 10px 25px!important; */
 }
 
+.drop a{
+    display:block;
+    width:100%;
+}
 
+.drop  ul   {
+width:100%;
+}
+
+.drop a .caret1 {
+    float: right;
+    margin-right: 11px;
+}
 /* Left nav panel } */
 
 

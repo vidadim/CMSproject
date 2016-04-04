@@ -13,22 +13,22 @@
 
 <body>
     <div class="main no-gutter">
-        <?php 
-            include 'nav_panel.php';
-        ?>
-        
+        <?php
+include 'nav_panel.php';
+?>
+
         <div class="col-md-10 col-sm-10" id="rightSection">
             <div class="s-row">
                 <div class="s-panel">
                     <h3><i class="fa fa-tachometer"></i> Panel <span class="total-items"></span></h3>
-                    <a href="blocks.php" class="dashboard-button"><i class="fa fa-cube"></i>Blocks</a>
-                    <a href="menus.php" class="dashboard-button"><i class="fa fa-th-list"></i>Menu</a>
-                    <a href="pages.php" class="dashboard-button"><i class="fa fa-tags"></i>Pages</a>
-                    <a href="categories.php" class="dashboard-button"><i class="fa fa-bullhorn"></i>Categories</a>
-                    <a href="publish.php" class="dashboard-button"><i class="fa fa-bullhorn"></i>Publish</a>
-                    <a href="users.php" class="dashboard-button"><i class="fa fa-users"></i>Users</a>
-                    <a href="settings.php" class="dashboard-button"><i class="fa fa-gears"></i>Settings</a>
-                    <a href="profile.php" class="dashboard-button"><i class="fa fa-user"></i>Edit profile</a>
+                    <a href="blocks/index.php" class="dashboard-button"><i class="fa fa-cube"></i>Blocks</a>
+                    <a href="menus/index.php" class="dashboard-button"><i class="fa fa-th-list"></i>Menu</a>
+                    <a href="pages/index.php" class="dashboard-button"><i class="fa fa-tags"></i>Pages</a>
+                    <a href="publish/categories/index.php" class="dashboard-button"><i class="fa fa-bullhorn"></i>Categories</a>
+                    <a href="publish/posts/index.php" class="dashboard-button"><i class="fa fa-bullhorn"></i>Posts</a>
+                    <a href="users/index.php" class="dashboard-button"><i class="fa fa-users"></i>Users</a>
+                    <a href="" class="dashboard-button"><i class="fa fa-gears"></i>Settings</a>
+                    <a href="" class="dashboard-button"><i class="fa fa-user"></i>Edit profile</a>
                 </div>
             </div>
         </div>
