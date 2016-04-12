@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Drag&Drop
+    </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.js" integrity="sha256-IY2gCpIs4xnQTJzCIPlL3uUgSOwVQYD9M8t208V+7KA=" crossorigin="anonymous"></script>
+    <style type="text/css">
+    .left {
+        background: lightsalmon;
+        height: 100vh;
+        position:relative;
+    }
+    
+    .right {
+        height: 100vh;
+        position:relative;
+    }
+    
+    .header,
+    .card {
+        border: 1px dashed black;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        cursor: pointer;
+        list-style: none;
+        padding: 10px 20px;
+        background: white;
+        margin: 10px;
+    }
+    
+    .drag {
+        cursor: pointer;
+        width: 100%;
+        background: white;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 60px;
+        border: 1px solid black;
+        position:relative;
+        z-index:4;
+
+    }
+
+    .droppable{
+    	background: lightcoral;
+    }
+    </style>
+</head>
+
+<body>
+</body>
+<div class="col-md-3 left">
+    <div id="drag" class="drag ui-widget-content">Header</div>
+    <div id="drag1" class="drag ui-widget-content">Article</div>
+    <div id="drag2" class="drag ui-widget-content">Header</div>
+    <div id="drag3" class="drag ui-widget-content">Header</div>
+</div>
+<div class="col-md-9 right">
+    <div class="header col-md-12 ui-widget-header droppable"></div>
+    <div class="col-md-4 card ui-widget-header droppable"></div>
+    <div class="col-md-4 card ui-widget-header droppable"></div>
+    <div class="col-md-4 card ui-widget-header droppable"></div>
+</div>
+
+</html>
+<script type="text/javascript">
+$(document).ready(function() {
+    // $(function() {
+    //     $("#sortable").sortable({
+    //         revert: true
+    //     });
+    // });
+
+    $("#drag").draggable({
+        revert: "invalid"
+    });
+    $(".droppable").droppable({
+        activeClass: "ui-state-default",
+        hoverClass: "ui-state-hover",
+        drop: function(event, ui) {
+            $(this)
+                .addClass("ui-state-highlight")
+                .find("div")
+                .html("Dropped!");
+        }
+    });
+
+});
+</script>
