@@ -1,0 +1,264 @@
+*,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+
+
+/* Common classes */
+
+
+/* bu klass verildiyi elementin altklaslarinda col-ile bashlayanlarin paddingin sifirlayir */
+
+
+/* Burda bir defe istifade olunub mainde */
+
+.no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.padding-left {
+    padding-left: 15px;
+}
+
+
+/* Common classes */
+
+
+/* left navigation panel { */
+
+
+/* Don't change anything */
+
+#navPanel {
+    width: 220px;
+    height: 100vh;
+    background-color: #2d2d2d;
+    font-size: 15px;
+    position: fixed;
+    z-index:1;
+}
+
+.s-nav {
+    width: 220px;
+    line-height: 21px;
+}
+
+.profile {
+    background-color: #202020;
+    width: 100%;
+}
+
+.profile ul li {
+    padding: 0px 0px;
+}
+
+.s-nav a {
+    text-decoration: none;
+    color: #FFF;
+    display: inline;
+}
+
+.s-nav li:not(.profile) {
+    font-size: 14px;
+    padding: 10px;
+    clear: both;
+    border-bottom: 1px solid #3b3b3b;
+    cursor: pointer;
+}
+
+li ul li {
+    border: none;
+}
+
+.fa-plus-circle {
+    float: right;
+}
+
+.profile a {
+    display: block;
+}
+
+.s-nav .fa {
+    margin: 1px 8px 0 0;
+    font-size: 20px;
+}
+
+.label {
+    padding: 5px 2px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.sub-li .fa {
+    font-size: 16px;
+}
+
+ul li ul li {
+    border: none !important;
+    /* padding: 10px 0px 10px 25px!important; */
+}
+
+.drop a{
+    display:block;
+    width:100%;
+}
+
+.drop  ul   {
+width:100%;
+}
+
+.drop a .caret1 {
+    float: right;
+    margin-right: 11px;
+}
+/* Left nav panel } */
+
+
+/* rightSection { */
+
+.rightSection {
+    position: relative;
+    /* left: 220px; Bunu javascript-de dinamic olaraq padding-left vererek evez etdik */
+    width: 100%;
+}
+
+
+/* Panel */
+
+#rightSection {
+    position: relative;
+    left: 220px;
+}
+
+.s-panel {
+    padding: 0 20px;
+}
+
+.s-panel h3 {
+    margin: 28px 0px;
+}
+
+.dashboard-button {
+    text-align: center;
+    color: #a1a1a1;
+    vertical-align: top;
+    text-decoration: none;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    font-size: 16px;
+    line-height: 24px;
+    width: 23.7%;
+    display: block;
+    min-height: 240px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 1% 1% 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .13);
+}
+
+.dashboard-button .fa {
+    font-size: 700%;
+    display: block;
+    margin: 14% 0 20px;
+}
+
+.dashboard-button:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Panel } */
+
+
+/* Blocks */
+
+.table {
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    border-spacing: 0;
+    margin: 0;
+    background: #f8f8f8;
+}
+
+.table a {
+    color: #000;
+}
+
+.table .fa {
+    font-size: 18px;
+}
+
+.table .icons {
+    width: 100px;
+}
+
+.table .lang {
+    width: 200px;
+}
+
+.search-form {
+    line-height: 38px;
+}
+
+.search-form input {
+    padding-left: 20px;
+    width: 100%;
+    -/* webkit-box-shadow:inset  0 0 1px rgba(0,0,0,.13);
+       -moz-box-shadow:inset 0 0 1px rgba(0,0,0,.13);
+        box-shadow:inset 0 0 1px rgba(0,0,0,.13); */
+    background: transparent;
+    cursor: text;
+}
+
+.sidebar-content {
+    background-color: #FFF;
+    padding: 15px 20px;
+    font-size: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .13);
+    border: 1px solid lightgray;
+}
+
+.buttons {}
+
+
+/* customizing bootstrap button width */
+
+.s-btn {
+    width: 100%;
+    border-radius: 2px;
+}
+
+
+/* Blocks */
+
+
+/* Blocks Create/Add */
+    form .checkbox {
+        width:30px;
+        cursor:pointer;
+        display:inline;
+        border:none;
+    }
+
+/* Blocks Create/Add */
+
+
+/* rightSection  }*/
